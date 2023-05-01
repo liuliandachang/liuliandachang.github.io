@@ -1,0 +1,35 @@
+baseURL = 'https://liuliandachang.github.io/'
+languageCode = 'en-us'
+title = '榴莲大肠慕丝小蛋糕'
+theme = 'etch'
+enableInlineShortcodes = true
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+
+[params]
+  description = 'A site by LiuLianDaChang'
+  copyright = 'Copyright © 2023 LiuLianDaChang'
+  dark = 'auto'
+  highlight = true
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "posts"
+    title = "posts"
+    url = "/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = 'search'
+    name = 'search'
+    title = 'search'
+    url = '/search/'
+    weight = 20
+
+[permalinks]
+  posts = '/p/:title'
+
+[markup.goldmark.renderer]
+  # Allows HTML in Markdown
+  unsafe = true
